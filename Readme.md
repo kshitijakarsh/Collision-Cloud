@@ -1,9 +1,10 @@
+# 🚗 CollisionCloud
 
-# 🚗 CollisionCloud  
-*A calm, clear journey from raw CCTV footage to a complete accident reconstruction report*
+_A calm, clear journey from raw CCTV footage to a complete accident reconstruction report_
 
 <!-- HERO IMAGE -->
-![CollisionCloud Hero](https://raw.githubusercontent.com/anuj846k/collisioncloud/main/public/images/intro.png)
+
+![CollisionCloud Hero](https://raw.githubusercontent.com/anuj846k/Collision-Cloud/main/accident-frontend/public/intro.png)
 
 ---
 
@@ -13,10 +14,10 @@ Every day, road accidents are recorded by CCTV cameras placed at intersections, 
 
 However, a video by itself does not answer critical questions:
 
-- Who was moving faster?  
-- Which vehicle entered the intersection first?  
-- When exactly did the collision occur?  
-- What happened just before and just after the impact?  
+- Who was moving faster?
+- Which vehicle entered the intersection first?
+- When exactly did the collision occur?
+- What happened just before and just after the impact?
 
 Today, answering these questions requires investigators to manually inspect footage frame by frame. This process is slow, subjective, and highly dependent on individual interpretation.
 
@@ -30,12 +31,12 @@ CollisionCloud transforms raw CCTV footage into **clear, explainable accident in
 
 Instead of forcing humans to manually decode videos, CollisionCloud:
 
-- Watches the video like an investigator  
-- Understands vehicle motion over time  
-- Detects collisions automatically  
-- Converts pixel movement into real-world measurements  
-- Explains the accident in simple language  
-- Generates professional, shareable reports  
+- Watches the video like an investigator
+- Understands vehicle motion over time
+- Detects collisions automatically
+- Converts pixel movement into real-world measurements
+- Explains the accident in simple language
+- Generates professional, shareable reports
 
 The goal is not just automation — it is **clarity, trust, and accessibility**.
 
@@ -45,19 +46,19 @@ The goal is not just automation — it is **clarity, trust, and accessibility**.
 
 CollisionCloud follows a simple, logical story:
 
-1. A user uploads a CCTV video  
-2. The system understands the scene  
-3. Vehicles are detected and tracked  
-4. Movement is converted into real-world motion  
-5. Collisions are identified  
-6. AI explains what happened  
-7. A complete report is delivered  
+1. A user uploads a CCTV video
+2. The system understands the scene
+3. Vehicles are detected and tracked
+4. Movement is converted into real-world motion
+5. Collisions are identified
+6. AI explains what happened
+7. A complete report is delivered
 
 Each system component exists to support one of these steps.
 
 The whole flow of CollisionCloud looks like this:
 
-![CollisionCloud Hero](https://raw.githubusercontent.com/anuj846k/Collision-Cloud/main/accident-frontend/public/intro.png)
+![CollisionCloud Flow](https://raw.githubusercontent.com/anuj846k/Collision-Cloud/main/accident-frontend/public/flow.png)
 
 ---
 
@@ -65,17 +66,18 @@ The whole flow of CollisionCloud looks like this:
 
 The journey begins when a user logs into **CollisionCloud**.
 
-![CollisionCloud Hero](https://raw.githubusercontent.com/anuj846k/Collision-Cloud/main/accident-frontend/public/step1.png)
+![CollisionCloud Step1](https://raw.githubusercontent.com/anuj846k/Collision-Cloud/main/accident-frontend/public/step1.png)
 
 Authentication ensures that only authorized users can upload evidence and generate reports. Once logged in, the user creates a **project**, which represents a single accident case.
 
 Think of a project as a **digital case file**.
 
 Each project securely contains:
-- The CCTV video  
-- Calibration data  
-- Analysis outputs  
-- Final reports  
+
+- The CCTV video
+- Calibration data
+- Analysis outputs
+- Final reports
 
 This keeps accident cases clearly separated and traceable.
 
@@ -85,12 +87,13 @@ This keeps accident cases clearly separated and traceable.
 
 The user uploads the CCTV video associated with the accident.
 
-![CollisionCloud Hero](https://raw.githubusercontent.com/anuj846k/Collision-Cloud/main/accident-frontend/public/step2.jpeg)
+![CollisionCloud Step2](https://raw.githubusercontent.com/anuj846k/Collision-Cloud/main/accident-frontend/public/step2.jpeg)
 
 At this stage:
-- No analysis is performed yet  
-- The video is securely stored  
-- Metadata is recorded and linked to the project  
+
+- No analysis is performed yet
+- The video is securely stored
+- Metadata is recorded and linked to the project
 
 CollisionCloud intentionally separates **evidence storage** from **evidence analysis** to preserve data integrity.
 
@@ -103,9 +106,10 @@ CCTV footage exists in **pixels**, but accident reconstruction requires **real-w
 Calibration bridges this gap.
 
 The user selects a reference video frame and marks known real-world distances, such as:
-- Lane width  
-- Road markings  
-- Distance between fixed objects  
+
+- Lane width
+- Road markings
+- Distance between fixed objects
 
 A map view can assist in aligning these points accurately.
 
@@ -121,18 +125,20 @@ Once calibration is complete, CollisionCloud begins analyzing the video.
 ### Vehicle Detection
 
 Each frame is scanned to identify vehicles:
-- Cars  
-- Bikes  
-- Trucks  
+
+- Cars
+- Bikes
+- Trucks
 
 Each detected vehicle is temporarily identified.
 
 ### Vehicle Tracking
 
 As frames progress:
-- Vehicles are followed consistently  
-- Their paths are recorded  
-- Continuous motion trajectories are formed  
+
+- Vehicles are followed consistently
+- Their paths are recorded
+- Continuous motion trajectories are formed
 
 CollisionCloud now understands **who moved where and when**.
 
@@ -141,16 +147,18 @@ CollisionCloud now understands **who moved where and when**.
 ## ⚠️ Step 5: Detecting the Collision
 
 With motion trajectories available, CollisionCloud looks for abnormal patterns such as:
-- Sudden deceleration  
-- Overlapping paths  
-- Abrupt motion changes  
+
+- Sudden deceleration
+- Overlapping paths
+- Abrupt motion changes
 
 When these signals align, a **collision event** is detected.
 
 For each collision, CollisionCloud records:
-- Exact timestamp  
-- Vehicles involved  
-- Pre-impact and post-impact motion  
+
+- Exact timestamp
+- Vehicles involved
+- Pre-impact and post-impact motion
 
 This removes guesswork and replaces it with measurable evidence.
 
@@ -160,9 +168,9 @@ This removes guesswork and replaces it with measurable evidence.
 
 Behind the scenes, CollisionCloud uses an automated workflow engine to ensure:
 
-- Each step runs in the correct order  
-- Failures can be retried safely  
-- Processing is logged and reproducible  
+- Each step runs in the correct order
+- Failures can be retried safely
+- Processing is logged and reproducible
 
 To the user, this appears as a simple processing status.  
 Internally, a carefully orchestrated pipeline ensures reliability.
@@ -176,21 +184,21 @@ CollisionCloud uses **Kestra** as the backbone of its processing pipeline.
 Rather than running everything as one long script, Kestra breaks the system into clear, repeatable tasks. Each task runs only when the previous one completes successfully.
 
 This ensures:
-- Predictable execution  
-- Safe retries  
-- Clear logs and observability  
+
+- Predictable execution
+- Safe retries
+- Clear logs and observability
 
 ### What Kestra Controls
 
-- Video processing execution  
-- Collision detection pipeline  
-- AI narrative generation  
-- PDF and audio report generation  
+- Video processing execution
+- Collision detection pipeline
+- AI narrative generation
+- PDF and audio report generation
 
 ### Simplified Kestra Workflow Example
 
 ```yaml
-
 id: accident-analysis-pipeline
 namespace: accident.reconstruction
 
@@ -211,12 +219,12 @@ inputs:
   - id: project_id
     type: STRING
     description: "UUID of the project to analyze"
-    
+
   - id: api_base_url
     type: STRING
     description: "Base URL of the FastAPI backend"
     defaults: "http://host.docker.internal:8000"
-    
+
   - id: auth_token
     type: STRING
     description: "JWT token for API authentication"
@@ -347,13 +355,13 @@ tasks:
           import requests
           from io import BytesIO
           from datetime import datetime
-          
+
           from reportlab.lib import colors
           from reportlab.lib.pagesizes import A4
           from reportlab.lib.units import inch
           from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
           from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, Image
-          
+
           # Get environment variables
           project_id = os.environ.get('PROJECT_ID', 'Unknown')
           collision_frame = os.environ.get('COLLISION_FRAME', '0')
@@ -361,7 +369,7 @@ tasks:
           screenshot_success = os.environ.get('SCREENSHOT_SUCCESS', 'false')
           api_base_url = os.environ.get('API_BASE_URL', '')
           auth_token = os.environ.get('AUTH_TOKEN', '')
-          
+
           # Fetch screenshot directly from API (to avoid env var size limit)
           screenshot_b64 = ''
           if screenshot_success == 'true' or screenshot_success == 'True':
@@ -385,16 +393,16 @@ tasks:
                   print(f"Screenshot fetch error: {e}")
           else:
               print("Screenshot was not successful, skipping")
-          
+
           # Read AI summary
           with open('summary.txt', 'r') as f:
               summary_text = f.read()
-          
+
           # Create PDF
           pdf_path = "/tmp/accident_report.pdf"
           doc = SimpleDocTemplate(pdf_path, pagesize=A4, topMargin=0.5*inch, bottomMargin=0.5*inch)
           styles = getSampleStyleSheet()
-          
+
           # Custom styles
           title_style = ParagraphStyle(
               'CustomTitle',
@@ -404,7 +412,7 @@ tasks:
               textColor=colors.darkblue,
               alignment=1
           )
-          
+
           header_style = ParagraphStyle(
               'CustomHeader',
               parent=styles['Heading2'],
@@ -412,13 +420,13 @@ tasks:
               spaceAfter=10,
               textColor=colors.darkred
           )
-          
+
           story = []
-          
+
           # Title
           story.append(Paragraph("ACCIDENT RECONSTRUCTION REPORT", title_style))
           story.append(Spacer(1, 10))
-          
+
           # Project Info Table
           timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
           project_data = [
@@ -429,7 +437,7 @@ tasks:
               ["Generated By:", "Kestra Workflow Engine"],
               ["Report Date:", timestamp]
           ]
-          
+
           t = Table(project_data, colWidths=[2*inch, 4*inch])
           t.setStyle(TableStyle([
               ('BACKGROUND', (0, 0), (0, -1), colors.lightgrey),
@@ -443,7 +451,7 @@ tasks:
           ]))
           story.append(t)
           story.append(Spacer(1, 20))
-          
+
           # Collision Screenshot (if available)
           if screenshot_b64 and len(screenshot_b64) > 100:
               story.append(Paragraph("COLLISION SCREENSHOT", header_style))
@@ -457,11 +465,11 @@ tasks:
               except Exception as e:
                   story.append(Paragraph(f"Screenshot unavailable: {str(e)}", styles['Normal']))
               story.append(Spacer(1, 15))
-          
+
           # AI Analysis Section
           story.append(Paragraph("AI ANALYSIS REPORT", header_style))
           story.append(Spacer(1, 5))
-          
+
           # Process markdown-style text
           for line in summary_text.split('\n'):
               line = line.strip()
@@ -476,9 +484,9 @@ tasks:
               else:
                   formatted = re.sub(r'\*\*(.*?)\*\*', r'<b>\1</b>', line)
                   story.append(Paragraph(formatted, styles['Normal']))
-          
+
           story.append(Spacer(1, 20))
-          
+
           # Footer
           footer_style = ParagraphStyle(
               'Footer',
@@ -490,31 +498,31 @@ tasks:
           story.append(Paragraph("-" * 60, footer_style))
           story.append(Paragraph("Generated by Accident Reconstruction AI System", footer_style))
           story.append(Paragraph("Powered by Kestra Workflow Engine + Google Gemini", footer_style))
-          
+
           # Build PDF
           doc.build(story)
           print(f"PDF generated: {pdf_path}")
-          
+
           # Upload to Cloudinary
           import cloudinary
           import cloudinary.uploader
-          
+
           cloudinary.config(
               cloud_name=os.environ.get('CLOUDINARY_CLOUD_NAME'),
               api_key=os.environ.get('CLOUDINARY_API_KEY'),
               api_secret=os.environ.get('CLOUDINARY_API_SECRET')
           )
-          
+
           result = cloudinary.uploader.upload(
               pdf_path,
               resource_type="raw",
               folder="accident-reports",
               public_id=f"report_{project_id}_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
           )
-          
+
           pdf_url = result['secure_url']
           print(f"PDF uploaded to Cloudinary: {pdf_url}")
-          
+
           # Output for Kestra
           from kestra import Kestra
           Kestra.outputs({"pdf_url": pdf_url, "pdf_generated": True})
@@ -548,47 +556,47 @@ tasks:
           import cloudinary.uploader
           from datetime import datetime
           from kestra import Kestra
-          
+
           audio_urls = {"english": None, "hindi": None}
-          
+
           project_id = os.environ.get('PROJECT_ID', 'Unknown')
           collision_count = os.environ.get('COLLISION_COUNT', '0')
           collision_frame = os.environ.get('COLLISION_FRAME', '0')
           elevenlabs_key = os.environ.get('ELEVENLABS_API_KEY')
           gemini_key = os.environ.get('GEMINI_API_KEY')
-          
+
           # Configure Cloudinary
           cloudinary.config(
               cloud_name=os.environ.get('CLOUDINARY_CLOUD_NAME'),
               api_key=os.environ.get('CLOUDINARY_API_KEY'),
               api_secret=os.environ.get('CLOUDINARY_API_SECRET')
           )
-          
+
           # Read the FULL AI summary from input file
           with open('summary.txt', 'r') as f:
               full_summary = f.read()
-          
+
           print(f"Full summary length: {len(full_summary)} characters")
-          
+
           # Clean up summary for audio - use the actual report directly
           print("Preparing audio script from full report...")
           import re
           english_text = full_summary
-          
+
           # Remove markdown formatting for clean speech
           english_text = re.sub(r'[#*_`]', '', english_text)
           english_text = re.sub(r'\n+', '. ', english_text)
           english_text = re.sub(r'\.+', '.', english_text)
           english_text = re.sub(r'\s+', ' ', english_text)
           english_text = english_text.strip()
-          
+
           # Truncate to save ElevenLabs credits (keep it short - ~2 min audio max)
           # 3000 chars ≈ 2.5 minutes of audio
           if len(english_text) > 3000:
               english_text = english_text[:3000] + ". For complete details, please refer to the full PDF report."
-          
+
           print(f"Audio script prepared: {len(english_text)} characters (approx {len(english_text)//20} seconds)")
-          
+
           # Generate English Audio
           print("Generating English audio...")
           try:
@@ -625,7 +633,7 @@ tasks:
                   print(f"English audio failed: {response.status_code} - {response.text}")
           except Exception as e:
               print(f"English audio error: {e}")
-          
+
           # Translate to Hindi using Gemini
           print("Translating to Hindi...")
           hindi_text = None
@@ -643,7 +651,7 @@ tasks:
                   print(f"Hindi translation: {hindi_text[:100]}...")
           except Exception as e:
               print(f"Translation error: {e}")
-          
+
           # Generate Hindi Audio
           if hindi_text:
               print("Generating Hindi audio...")
@@ -681,11 +689,11 @@ tasks:
                       print(f"Hindi audio failed: {response.status_code}")
               except Exception as e:
                   print(f"Hindi audio error: {e}")
-          
+
           print(f"Audio generation complete!")
           print(f"English: {audio_urls['english']}")
           print(f"Hindi: {audio_urls['hindi']}")
-          
+
           # Always output results (with fallbacks for any failures)
           Kestra.outputs({
               "audio_english_url": audio_urls.get("english") or "FAILED",
@@ -729,11 +737,11 @@ outputs:
   - id: project_id
     type: STRING
     value: "{{inputs.project_id}}"
-    
+
   - id: collision_count
     type: STRING
     value: "{{json(outputs.get_collisions.body).collision_count}}"
-    
+
   - id: collision_frame
     type: STRING
     value: "{{json(outputs.get_screenshot.body).collision_frame}}"
@@ -742,16 +750,15 @@ triggers:
   - id: user_trigger
     type: io.kestra.plugin.core.trigger.Webhook
     key: "user-trigger"
-      
 ```
 
 Kestra allows CollisionCloud to behave like a **real production system**, even within a hackathon environment.
 
-**Execution Results** : 
+**Execution Results** :
 
-![CollisionCloud Hero](https://raw.githubusercontent.com/anuj846k/Collision-Cloud/main/accident-frontend/public/kestra1.png)
+![CollisionCloud Kestra 1](https://raw.githubusercontent.com/anuj846k/Collision-Cloud/main/accident-frontend/public/kestra1.png)
 
-![CollisionCloud Hero](https://raw.githubusercontent.com/anuj846k/Collision-Cloud/main/accident-frontend/public/kestra2.png)
+![CollisionCloud Kestra 2](https://raw.githubusercontent.com/anuj846k/Collision-Cloud/main/accident-frontend/public/kestra2.png)
 
 ## 🤖 Step 7: Explaining the Accident in Human Language
 
@@ -760,9 +767,10 @@ Numbers, graphs, and coordinates alone are not enough for real-world accident in
 After collision detection is complete, CollisionCloud sends structured accident data to an AI reasoning layer. This layer converts technical outputs into **plain-language narratives** that describe what happened during the incident.
 
 The explanation focuses on:
-- Vehicle behavior before impact  
-- The exact moment of collision  
-- Vehicle movement immediately after impact  
+
+- Vehicle behavior before impact
+- The exact moment of collision
+- Vehicle movement immediately after impact
 
 These explanations are strictly grounded in detected facts. The AI does not invent events — it only explains what the system has observed.
 
@@ -784,7 +792,7 @@ These explanations are strictly grounded in detected facts. The AI does not inve
 
 This step ensures CollisionCloud remains accessible to **investigators, insurance teams, and legal professionals** — not just engineers.
 
-----------
+---
 
 ## 🗣️ Step 8: Audio Narration for Accessibility
 
@@ -792,12 +800,9 @@ To make insights easier to consume, CollisionCloud also produces **spoken summar
 
 These narrations:
 
--   Verbally describe the accident sequence
-    
--   Are generated from the same verified data as the written explanation
-    
--   Improve accessibility for users who prefer listening
-    
+- Verbally describe the accident sequence
+- Are generated from the same verified data as the written explanation
+- Improve accessibility for users who prefer listening
 
 Audio outputs are especially useful during quick reviews or presentations.
 
@@ -805,12 +810,11 @@ Audio outputs are especially useful during quick reviews or presentations.
 
 <iframe src="https://drive.google.com/file/d/1pv9l7zuMiCCfujuEC215ijZTDePg0DIF/preview" width="640" height="180"></iframe>
 
-
 **Hindi Audio Report Sample**
 
 <iframe src="https://drive.google.com/file/d/1SoJLPmmgDFSA2GJ0IqbmfxyElwKKF2PO/preview" width="640" height="180"></iframe>
 
-----------
+---
 
 ## 📄 Step 9: The CollisionCloud Report
 
@@ -820,37 +824,27 @@ Once analysis and explanations are complete, CollisionCloud compiles everything 
 
 The report acts as a single source of truth and includes:
 
--   Case overview and metadata
-    
--   Collision timeline
-    
--   Key frames before, during, and after impact
-    
--   Vehicle trajectories and motion paths
-    
--   Real-world distance and speed estimates
-    
--   AI-generated narrative explanation
-    
+- Case overview and metadata
+- Collision timeline
+- Key frames before, during, and after impact
+- Vehicle trajectories and motion paths
+- Real-world distance and speed estimates
+- AI-generated narrative explanation
 
 This report can be:
 
--   Downloaded by the user
-    
--   Shared with stakeholders
-    
--   Submitted to authorities or insurers
-    
--   Used as supporting legal documentation
-    
+- Downloaded by the user
+- Shared with stakeholders
+- Submitted to authorities or insurers
+- Used as supporting legal documentation
 
-----------
+---
 
 ## 📊 Step 10: Visual Evidence Produced by CollisionCloud
 
 Transparency is a core principle of CollisionCloud. For this reason, the system generates multiple visual artifacts that support the final conclusions.
 
-![CollisionCloud Hero](https://raw.githubusercontent.com/anuj846k/Collision-Cloud/main/accident-frontend/public/final.png)
+![CollisionCloud Final](https://raw.githubusercontent.com/anuj846k/Collision-Cloud/main/accident-frontend/public/final.png)
 
 ### Vehicle Trajectories
 
@@ -862,15 +856,11 @@ Visual paths show how each vehicle moved through the scene before and after impa
 
 The system automatically extracts key frames:
 
--   Moments before impact
-    
--   Exact collision frame
-    
--   Moments after impact
-    
+- Moments before impact
+- Exact collision frame
+- Moments after impact
 
 <!-- IMAGE PLACEHOLDER --> <!-- ![CollisionCloud Collision Frames](images/collision-frames.png) -->
-
 
 ### Timeline Visualization
 
@@ -880,15 +870,13 @@ A timeline view presents events in sequence, helping reviewers understand cause 
 
 These visuals ensure that conclusions are **visible, verifiable, and explainable**.
 
-----------
-
+---
 
 ## 👥 Team Behind CollisionCloud
 
 CollisionCloud was built by a two-member team with a clear division of responsibilities, ensuring focus, ownership, and depth in each part of the system.
 
 <iframe src="https://drive.google.com/file/d/14Kxp-2mtvAjX9H1R0N_xvQ1P6Rm0F4la/preview" width="640" height="280"></iframe>
-
 
 ### Team Members
 
@@ -900,35 +888,26 @@ CollisionCloud was built by a two-member team with a clear division of responsib
 
 Together, the team focused on building a system that is not only technically sound, but also easy to understand and use for non-technical stakeholders.
 
-
-
-----------
+---
 
 ## 🌟 Why CollisionCloud Matters
 
 CollisionCloud reduces:
 
--   Manual investigation effort
-    
--   Human bias
-    
--   Time required to reach conclusions
-    
+- Manual investigation effort
+- Human bias
+- Time required to reach conclusions
 
 And increases:
 
--   Consistency
-    
--   Transparency
-    
--   Accessibility
-    
--   Trust in accident reconstruction
-    
+- Consistency
+- Transparency
+- Accessibility
+- Trust in accident reconstruction
 
 By turning raw CCTV footage into structured insights, CollisionCloud bridges the gap between **evidence** and **understanding**.
 
-----------
+---
 
 ## 🧭 Final Thought
 
