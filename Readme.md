@@ -3,8 +3,7 @@
 *A calm, clear journey from raw CCTV footage to a complete accident reconstruction report*
 
 <!-- HERO IMAGE -->
-<!-- ![CollisionCloud System Overview](images/hero.png) -->
-<iframe src="https://drive.google.com/file/d/1GRnjptenKtMuohUs27Nh0eadFICMqh4B/preview" width="640" height="420"></iframe>
+![CollisionCloud Hero](https://raw.githubusercontent.com/anuj846k/collisioncloud/main/public/images/intro.png)
 
 ---
 
@@ -58,7 +57,7 @@ Each system component exists to support one of these steps.
 
 The whole flow of CollisionCloud looks like this:
 
-<iframe src="https://drive.google.com/file/d/1KzlZ1PQp-tqX3v7g0XaAFIhi0SZykLKe/preview" width="640" height="420"></iframe>
+![CollisionCloud Hero](https://raw.githubusercontent.com/anuj846k/Collision-Cloud/main/accident-frontend/public/intro.png)
 
 ---
 
@@ -66,7 +65,7 @@ The whole flow of CollisionCloud looks like this:
 
 The journey begins when a user logs into **CollisionCloud**.
 
-<iframe src="https://drive.google.com/file/d/1uAh214wlSMh76hhlgPzWeZYTD0kIlNSl/preview" width="640" height="480"></iframe>
+![CollisionCloud Hero](https://raw.githubusercontent.com/anuj846k/Collision-Cloud/main/accident-frontend/public/step1.png)
 
 Authentication ensures that only authorized users can upload evidence and generate reports. Once logged in, the user creates a **project**, which represents a single accident case.
 
@@ -86,7 +85,7 @@ This keeps accident cases clearly separated and traceable.
 
 The user uploads the CCTV video associated with the accident.
 
-<iframe src="https://drive.google.com/file/d/1ysxOdZRLnyDoyQDgFA22yCWKUhGCUNhc/preview" width="640" height="480"></iframe>
+![CollisionCloud Hero](https://raw.githubusercontent.com/anuj846k/Collision-Cloud/main/accident-frontend/public/step2.jpeg)
 
 At this stage:
 - No analysis is performed yet  
@@ -750,9 +749,9 @@ Kestra allows CollisionCloud to behave like a **real production system**, even w
 
 **Execution Results** : 
 
-<iframe src="https://drive.google.com/file/d/1WIzUoLw2XJb2_xKhzOztG65IKb7yILr_/preview" width="640" height="480"></iframe>
+![CollisionCloud Hero](https://raw.githubusercontent.com/anuj846k/Collision-Cloud/main/accident-frontend/public/kestra1.png)
 
-<iframe src="https://drive.google.com/file/d/1LHTme9QMbAfDPAxNdOCQKvEttObxzZYg/preview" width="640" height="480"></iframe>
+![CollisionCloud Hero](https://raw.githubusercontent.com/anuj846k/Collision-Cloud/main/accident-frontend/public/kestra2.png)
 
 ## 🤖 Step 7: Explaining the Accident in Human Language
 
@@ -851,7 +850,7 @@ This report can be:
 
 Transparency is a core principle of CollisionCloud. For this reason, the system generates multiple visual artifacts that support the final conclusions.
 
-<iframe src="https://drive.google.com/file/d/1iTc_aNpMGm5yAsCL5TiXqEMxHMkd2ekW/preview" width="640" height="480"></iframe>
+![CollisionCloud Hero](https://raw.githubusercontent.com/anuj846k/Collision-Cloud/main/accident-frontend/public/final.png)
 
 ### Vehicle Trajectories
 
