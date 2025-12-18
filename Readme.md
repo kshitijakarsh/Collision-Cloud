@@ -756,9 +756,9 @@ Kestra allows CollisionCloud to behave like a **real production system**, even w
 
 **Execution Results** :
 
-![CollisionCloud Kestra 1](https://raw.githubusercontent.com/anuj846k/Collision-Cloud/main/accident-frontend/public/kestra1.png)
+![CollisionCloud Kestra 1](https://raw.githubusercontent.com/anuj846k/Collision-Cloud/main/accident-frontend/public/kestra1.jpeg)
 
-![CollisionCloud Kestra 2](https://raw.githubusercontent.com/anuj846k/Collision-Cloud/main/accident-frontend/public/kestra2.png)
+![CollisionCloud Kestra 2](https://raw.githubusercontent.com/anuj846k/Collision-Cloud/main/accident-frontend/public/kestra2.jpeg)
 
 ## 🤖 Step 7: Explaining the Accident in Human Language
 
@@ -808,11 +808,11 @@ Audio outputs are especially useful during quick reviews or presentations.
 
 **English Audio Report Sample**
 
-<iframe src="https://drive.google.com/file/d/1pv9l7zuMiCCfujuEC215ijZTDePg0DIF/preview" width="640" height="180"></iframe>
+[Play audio](https://raw.githubusercontent.com/anuj846k/Collision-Cloud/main/accident-frontend/public/audio_en_e232695e-08fb-44e1-a38d-5f6bf481d93c_20251214_112505.mp3)
 
 **Hindi Audio Report Sample**
 
-<iframe src="https://drive.google.com/file/d/1SoJLPmmgDFSA2GJ0IqbmfxyElwKKF2PO/preview" width="640" height="180"></iframe>
+[Play audio](https://raw.githubusercontent.com/anuj846k/Collision-Cloud/main/accident-frontend/public/audio_hi_58b5c1de-0ce4-433d-93dc-2fa2af9961fd_20251214_144922.mp3)
 
 ---
 
@@ -820,7 +820,9 @@ Audio outputs are especially useful during quick reviews or presentations.
 
 Once analysis and explanations are complete, CollisionCloud compiles everything into a **professional PDF report**.
 
-<iframe src="https://drive.google.com/file/d/1IhwIMo2j15z5SMXtbZnc9xdjV8tz2E1R/preview" width="640" height="680"></iframe>
+📄 **Project Report**  
+[View PDF](https://raw.githubusercontent.com/anuj846k/Collision-Cloud/main/accident-frontend/public/report_e232695e-08fb-44e1-a38d-5f6bf481d93c_20251214_112406.pdf)
+
 
 The report acts as a single source of truth and includes:
 
@@ -844,7 +846,7 @@ This report can be:
 
 Transparency is a core principle of CollisionCloud. For this reason, the system generates multiple visual artifacts that support the final conclusions.
 
-![CollisionCloud Final](https://raw.githubusercontent.com/anuj846k/Collision-Cloud/main/accident-frontend/public/final.png)
+![CollisionCloud Final](https://raw.githubusercontent.com/anuj846k/Collision-Cloud/main/accident-frontend/public/final.jpeg)
 
 ### Vehicle Trajectories
 
@@ -876,7 +878,7 @@ These visuals ensure that conclusions are **visible, verifiable, and explainable
 
 CollisionCloud was built by a two-member team with a clear division of responsibilities, ensuring focus, ownership, and depth in each part of the system.
 
-<iframe src="https://drive.google.com/file/d/14Kxp-2mtvAjX9H1R0N_xvQ1P6Rm0F4la/preview" width="640" height="280"></iframe>
+![CollisionCloud Final](https://raw.githubusercontent.com/anuj846k/Collision-Cloud/main/accident-frontend/public/team.png)
 
 ### Team Members
 
